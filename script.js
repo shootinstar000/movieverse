@@ -34,16 +34,16 @@ function getWordStr(str) {
 var baseUrl = "https://thawning.tanishagoyal.repl.co/api?uri=";
 
 function getCategoryUri(catid){
-    return(baseUrl + encodeURIComponent("https://olamovies.site/wp-json/wp/v2/posts?_embed&categories="+catid));
+    return(baseUrl + encodeURIComponent("https://themoviesverse.co/wp-json/wp/v2/posts?_embed&categories="+catid));
 }
 
 
 function getSearchurl(query){
-    // return `${baseUrl + encodeURIComponent(`https://olamovies.site/wp-json/wp/v2/search?_embed&search=${query}&per_page=10`) }`;
-    return `${baseUrl + encodeURIComponent(`https://olamovies.site/wp-json/wp/v2/posts?_embed&search=${query}&per_page=70`) }`;
+    // return `${baseUrl + encodeURIComponent(`https://themoviesverse.co/wp-json/wp/v2/search?_embed&search=${query}&per_page=10`) }`;
+    return `${baseUrl + encodeURIComponent(`https://themoviesverse.co/wp-json/wp/v2/posts?_embed&search=${query}&per_page=70`) }`;
 }
 
-var latestPosts = baseUrl + encodeURIComponent("https://olamovies.site/wp-json/wp/v2/posts?_embed=1&per_page=50");
+var latestPosts = baseUrl + encodeURIComponent("https://themoviesverse.co/wp-json/wp/v2/posts?_embed=1&per_page=50");
 
 // async function getLatestPosts(){
 //     return makeRequest("GET", latestPosts);
